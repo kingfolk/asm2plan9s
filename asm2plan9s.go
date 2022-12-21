@@ -241,6 +241,7 @@ func main() {
 
 	result, err := assemble(lines, false)
 	if err != nil {
+		log.Fatalf(err.Error())
 		fmt.Print(err)
 		os.Exit(-1)
 	}
