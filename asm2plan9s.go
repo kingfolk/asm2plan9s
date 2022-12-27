@@ -252,4 +252,5 @@ func main() {
 		fmt.Println("write error", err)
 		log.Fatalf("writeLines: %s", err)
 	}
+	fmt.Println("---** finish asm2plan9s **---")
 }
