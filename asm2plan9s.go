@@ -221,7 +221,7 @@ func assemble(lines []string, compact bool) (result []string, err error) {
 }
 
 func main() {
-	fmt.Println("---* start asm2plan9s *---")
+	fmt.Println("---** start asm2plan9s **---")
 	file := ""
 	if len(os.Args) >= 2 {
 		file = os.Args[1]
