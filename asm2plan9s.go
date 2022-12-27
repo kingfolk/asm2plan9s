@@ -236,6 +236,7 @@ func main() {
 		lines, err = readLines("", os.Stdin)
 	}
 	if err != nil {
+		fmt.Println("read error", err)
 		log.Fatalf("readLines: %s", err)
 	}
 
@@ -248,6 +249,7 @@ func main() {
 
 	err = writeLines(result, file, os.Stdout)
 	if err != nil {
+		fmt.Println("write error", err)
 		log.Fatalf("writeLines: %s", err)
 	}
 }
